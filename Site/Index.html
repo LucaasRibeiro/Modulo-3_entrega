@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens LR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Imagens/FAVICON_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Início do Menu -->
+    <header>
+        <nav>
+            <a class="logo" href="/">Viegens LR</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="Index.html">Inicio</a></li>
+                <li><a class="nav-link" href="Destinos.html">Destinos</a></li>
+                <li><a class="nav-link" href="Promocoes.html">Promoções</a></li>
+                <li><a class="nav-link" href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="mobile-navbar.js"></script>
+</body>
+<!-- Fim Menu -->
+
+
+
+<!--Inicio do Main-->
+<main>
+    <section>
+        <div class="container-form area-limite">
+            <div class="titulo-form">
+                <div class="conteudo-titulo-form">
+                    <img src="Imagens/Icons/aviao.png" alt="Icone Avião">
+                    <h2>Faça um orçamento conosco</h2>
+                    <div id="orcamento" class="form-text">Seguindo as normas da LGPD, todos seus dados serão
+                        devidamente
+                        guardados com a devida segurança!</div>
+                </div>
+            </div>
+            <div class="form-area">
+                <h1>Informe por favor seus dados</h1>
+                <form>
+                    <div class="grupo-label-input">
+                        <label>Nome</label>
+                        <input type="text" name="nome" placeholder="Nome Completo" required>
+                    </div>
+                    <div class="grupo-label-input">
+                        <label>E-mail</label>
+                        <input type="text" name="email" placeholder="Email para contato" required>
+                    </div>
+                    <div class="grupo-label-input">
+                        <label>Telefone</label>
+                        <input type="number" name="celular" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+                    <div class="grupo-input-duplo">
+                        <div class="grupo-label-input">
+                            <label>Ida</label>
+                            <input type="date" name="Partida" required>
+                        </div>
+                        <div class="grupo-label-input">
+                            <label>Volta</label>
+                            <input type="date" name="Chegada" required>
+                        </div>
+                    </div>
+
+                    <div class="grupo-input-duplo">
+                        <div class="grupo-label-input">
+                            <label for="origem-label">Origens</label>
+                            <select name="origem" id="origem-label" required>
+                                <option value="">Partindo de: </option>
+                                <option value="SP">São Paulo</option>
+                                <option value="BH">Belo Horizonte</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="AC">Acre</option>
+                                <option value="Al">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espirito Santo</option>
+                                <option value="GO">Goias</option>
+                                <option value="SP">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-input-duplo">
+                            <div class="Grupo-label-input">
+                                <label for="destino-label">Origens</label>
+                                <select name="origem" id="destino-label" required>
+                                    <option value="">Destino: </option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="BH">Belo Horizonte</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="Al">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espirito Santo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="SP">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="grupo-input-radio">
+                            <label>Avião ou Onibus ?</label>
+                            <div class="grupo-input-duplo-radio-check">
+                                <div class="flex-input">
+                                    <input type="radio" name="avião" id="aviao-transporte" value="A" required>
+                                    <label for="aviao-transporte">Avião</label>
+                                </div>
+                                <div class="flex-input">
+                                    <input type="radio" name="onibus" id="onibus-transporte" value="O">
+                                    <label for="onibus-transporte">Ônibus</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grupo-input-radio">
+                            <label>Prefências da Hospedagem</label>
+                            <div class="grupo-input-duplo-radio-check">
+                                <div class="flex-input">
+                                    <label for="check-pscina">Piscina</label>
+                                    <input type="checkbox" name="preferencias[]" id="check-pscina" value="pscina">
+                                </div>
+                                <div class="flex-input">
+                                    <label for="check-wifi">WI-FI</label>
+                                    <input type="checkbox" name="preferencias[]" id="check-wifi" value="wifi">
+                                </div>
+                                <div class="flex-input">
+                                    <label for="check-garagem">Garagem</label>
+                                    <input type="checkbox" name="preferencias[]" id="check-garagem" value="garagem">
+                                </div>
+                                <div class="flex-input">
+                                    <label for="check-suite">Suite</label>
+                                    <input type="checkbox" name="preferencias[]" id="check-suite" value="suite">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <!--<h4>Aperte aqui para enviar seus dados</h4>-->
+                        <button type="submit" id="numb1">Solicitar Orçamento</button>
+                        <script src="JS/botoes.js"></script>
+
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<main class="container">
+
+   
+
+
+    
+    <section class="row">
+        <div class="col">
+            <p> Viagens L.R é uma agencia destinada para você e a sua familia realizarem seus sonhos</p>
+            <p>Sabe aquela VIAGEM BARATA que você está procurando para as suas férias? Ela está aqui na Viagens LR.
+                Encontre promoções de voo por preços imperdíveis! Essa é uma ótima oportunidade para você
+                conhecer destinos do Brasil e do mundo fazendo quantas viagens baratas desejar. Com essas OFERTAS,
+                você
+                terá acesso aos preços mais baixos para as próximas semanas, tanto de voos quanto de
+                hotéis. Faça agora um orgamento com a gente (a cima desse texto) com mesmo os pacotes em oferta com
+                a
+                Viagens e comece a
+                tornar realidade a viagem que você sempre sonhou!
+            </p>
+        </div>
+        <div class="col">
+            <img src="Imagens/Imagens_Final/Mundo.jfif" alt="Mundo" width="500px">
+        </div>
+    </section>
+    <hr>
+</main>
+<!--Fim do Main-->
+
+<!-- <h6>Download dos termos de serviço da agencia:</h6>
+<a href="TERMOS DO SITE VIAGENS LR.zip" download="termos do site" type="application/zip"> Baixe aqui os termos!</a>
+
+-->
+
+
+<!--Footer-->
+<footer class="footer-final">&copy; Lucas Ribeiro
+    <div class="area-limite">
+        <div class="box-rodape">
+            <h5>Contato</h5>
+            <div class="Icont-texto">
+                <img src="Imagens/Icons/local.png" alt="Local">
+                <span>São João de Meriti - RJ</span>
+            </div>
+            <div class="Icont-texto">
+                <img src="Imagens/Icons/telefone.png" alt="Telefone">
+                <span>4002-8922</span>
+            </div>
+            <div class="Icont-texto">
+                <img src="Imagens/Icons/email.png" alt="E-mail Icon">
+                <span>Email: lukinhas.lr655@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="box-rodape">
+            <h5>Nossas Redes Socias</h5>
+            <div class="Icont-texto">
+                <img src="Imagens/Icons/ig.png" alt="Instagram">
+                <span><a href="https://www.instagram.com/_ribeiro_99/" target="_blank"
+                        real="external">ribeiro_99</a></span>
+            </div>
+            <div class="Icont-texto">
+                <img src="Imagens/Icons/tt.png" alt="Twitter">
+                <span>_ribeiro_99</span>
+            </div>
+            <div class="Icont-texto">
+                <img src="Imagens/Icons/telefone.png" alt="Celular">
+                <span>(21) 97975-2482</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
