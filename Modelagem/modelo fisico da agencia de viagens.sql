@@ -1,6 +1,6 @@
-CREATE DATABASE viagenslr
+CREATE DATABASE Viagenslr;
 
-USE viagenslr
+USE Viagenslr;
 
 
 CREATE TABLE Cliente (
@@ -21,26 +21,46 @@ CREATE TABLE Cliente (
     
 );
 
-CREATE TABLE Usúario (
-    id_usuario INTEGER PRIMARY KEY auto_increment,
-    login_usuario VARCHAR (20),
-    senha_usuario VARCHAR (30),
-	FOREIGN KEY (id_cliente) REFERENCES Cliente (id_cliente),
-    id_cliente INTEGER (30),
-    FOREIGN KEY (id_permissoes) REFERENCES Permissoes (id_permissoes),
-    id_permissao INTEGER (30)
-);
-
 CREATE TABLE Permissoes (
     id_permissoes INTEGER PRIMARY KEY auto_increment,
     tipo_permissoes VARCHAR (20)
 );
 
+
+CREATE TABLE Voo (
+    id_voo INTEGER PRIMARY KEY auto_increment,
+    origem_voo VARCHAR (20),
+    destino_voo VARCHAR (20),
+    dataIda_voo DATE,
+    dataVolta_voo DATE,
+    id_passagens INTEGER
+    );
+
+CREATE TABLE Onibus (
+    id_onibus INTEGER PRIMARY KEY auto_increment,
+    origem_onibus VARCHAR (20),
+    destino_onibus VARCHAR (30),
+    dataIda_onibus DATE,
+    dataVolta_onibus DATE,
+    id_passagens INTEGER
+);
+
+CREATE TABLE Usuario (
+    id_usuario INTEGER PRIMARY KEY auto_increment,
+    login_usuario VARCHAR (20),
+    senha_usuario VARCHAR (30),
+	id_cliente INTEGER (30),
+    FOREIGN KEY (id_cliente) REFERENCES Cliente (id_cliente),
+    id_permissoes INTEGER (30),
+    FOREIGN KEY (id_permissoes) REFERENCES Permissoes (id_permissoes)
+);
+
+
 CREATE TABLE Comprar (
-    id_compra INTEGER PRIMARY KEY auto_increment,
-    tipo_compra VARCHAR (20),
-    valor_compra DECIMAL(5,2)
-    data_compra DATETIME (11),
+    id_comprar INTEGER PRIMARY KEY auto_increment,
+    tipo_comprar VARCHAR (20),
+    valor_comprar DECIMAL(5,2),
+    data_comprar DATE,
     id_usuario INTEGER (20),
 	FOREIGN KEY (id_usuario) REFERENCES Usuario (id_usuario)
 );
@@ -49,30 +69,10 @@ CREATE TABLE Passagens (
     id_passagens INTEGER PRIMARY KEY auto_increment,
     aereas_passagens INTEGER (20),
     onibus_passagens INTEGER (20),
-	FOREIGN KEY (id_voo) REFERENCES Voo (id_voo),
     id_voo INTEGER,
-	FOREIGN KEY (id_onibus) REFERENCES Onibus (id_onibus),
-    id_onibus INTEGER
-);
-
-CREATE TABLE Voo (
-    id_voo INTEGER PRIMARY KEY auto_increment,
-    origem_voo VARCHAR (20),
-    destino_voo VARCHAR (20),
-    dataIda_voo DATETIME (30),
-    dataVolta_voo DATETIME (30),
-    id_passagens INTEGER
-	FOREIGN KEY (id_passagens) REFERENCES Passagens (id_passagens)
-);
-
-CREATE TABLE Onibus (
-    id_onibus INTEGER PRIMARY KEY auto_increment,
-    origem_onibus VARCHAR (20),
-    destino_onibus VARCHAR (30),
-    dataIda_onibus DATETIME (30),
-    dataVolta_onibus DATETIME (30),
-    id_passagens INTEGER
-	FOREIGN KEY (id_passagens) REFERENCES Passagens (id_passagens)
+	FOREIGN KEY (id_voo) REFERENCES Voo (id_voo),
+    id_onibus INTEGER,
+	FOREIGN KEY (id_onibus) REFERENCES Onibus (id_onibus)
 );
 
 
