@@ -13,7 +13,7 @@ public class Usuario
 	private String cpf;
 	private String rg;
 	private int tel_usuario;
-	private String endereço;
+	
 	
 	public Usuario () {
 		
@@ -30,7 +30,7 @@ public class Usuario
 		this.cpf = cpf;
 		this.rg = rg;
 		this.tel_usuario = tel_usuario;
-		this.endereço = endereço;
+		
 	}
 
 
@@ -113,15 +113,6 @@ public class Usuario
 	public void setTel_usuario(int tel_usuario) {
 		this.tel_usuario = tel_usuario;
 	}
-
-	public String getEndereço() {
-		return endereço;
-	}
-
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
-	}
-	
 	
 }
 
