@@ -13,14 +13,14 @@ public class Usuario
 	private String cpf;
 	private String rg;
 	private int tel_usuario;
-	
+
 	
 	public Usuario () {
 		
 	}
 	
 	public Usuario(int id_usuario, String nome_usuario, LocalDate data_nasc, String email_usuario, String senha_usuario,
-			String cpf, String rg, int tel_usuario, String endereço) {
+			String cpf, String rg, int tel_usuario) {
 		super();
 		this.id_usuario = id_usuario;
 		this.nome_usuario = nome_usuario;
@@ -37,17 +37,6 @@ public class Usuario
 
 	public Usuario(int id, String nome) {
 		
-	}
-
-
-	public void cadastrarUsuario() {
-		
-	}
-	
-	
-	
-	public void alterarSenha() {
-			
 	}
 
 	public int getId_usuario() {
@@ -113,6 +102,9 @@ public class Usuario
 	public void setTel_usuario(int tel_usuario) {
 		this.tel_usuario = tel_usuario;
 	}
+
+
+	
 	
 }
 
