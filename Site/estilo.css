@@ -1,0 +1,167 @@
+footer{
+    font-size: small;
+    text-align: center;
+}
+
+.old_value_promo {
+    font-size: small;
+    color: rgb(255, 72, 0);
+    text-decoration: line-through;
+}
+
+/* Formulario da Pagina Inicial*/
+section:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    background-image: url('../img/Natureza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container-form {
+    height: 650px;
+    background-color: #fff;
+}
+
+.titulo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to right, #212529, #212529);
+}
+
+.conteudo-titulo-form {
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    gap: 10px;
+}
+
+.conteudo-titulo-form img {
+    width: 22px;
+    height: 22px;
+    transform: rotate(-15deg);
+}
+
+.form-area {
+    padding: 0 40px 40px 40px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.grupo-label-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-input-duplo,
+.grupo-input-duplo-radio-check {
+    display: flex;
+    gap: 15px;
+}
+
+.grupo-input-duplo-radio-check {
+    flex-wrap: wrap;
+}
+
+.grupo-input-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.grupo-input-radio input {
+    width: 15px;
+    height: 15px;
+}
+
+.flex-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+input,
+select {
+    font-size: 1rem;
+    height: 30px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.flex-input input,
+.flex-input label {
+    margin: 0;
+}
+
+
+form button {
+    color: #fff;
+    background-image: linear-gradient(to right, #212529, #212529);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    padding: 5px;
+    width: 150px;
+    border: 2px solid #212529 ;/*Borda do botão*/
+}
+
+form button:focus {
+    color: #b31212;
+    background-color: #fff;
+}
+
+
+
+
+footer {
+    color: #fff;
+    background-image: linear-gradient(to right, #212529, #212529);
+    margin-top: 120px;
+    padding: 20px 0;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+footer .area-limite {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h4 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.icon-texto {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    gap: 10px;
+}
